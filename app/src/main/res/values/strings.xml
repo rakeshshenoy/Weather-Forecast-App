@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Forecast Search</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="aeris_id">1fkOqfOJJgWaJIlmG1YP7</string>
+    <string name="aeris_secret">wrwklQPk25d8XuGp2tKjxmfWhKQ3afLHPtPu9pcy</string>
+
+    <string name="FBkey">1636403019956154</string>
+
+    <string-array name="states">
+        <item name="">Select</item>
+        <item name="AL">Alabama</item>
+        <item name="AK">Alaska</item>
+        <item name="AZ">Arizona</item>
+        <item name="AR">Arkansas</item>
+        <item name="CA">California</item>
+        <item name="CO">Colorado</item>
+        <item name="CT">Connecticut</item>
+        <item name="DE">Delaware</item>
+        <item name="FL">Florida</item>
+        <item name="GA">Georgia</item>
+        <item name="HI">Hawaii</item>
+        <item name="ID">Idaho</item>
+        <item name="IL">Illinois</item>
+        <item name="IN">Indiana</item>
+        <item name="IA">Iowa</item>
+        <item name="KS">Kansas</item>
+        <item name="KY">Kentucky</item>
+        <item name="LA">Louisiana</item>
+        <item name="ME">Maine</item>
+        <item name="MD">Maryland</item>
+        <item name="MA">Massachusetts</item>
+        <item name="MI">Michigan</item>
+        <item name="MN">Minnesota</item>
+        <item name="MS">Mississippi</item>
+        <item name="MO">Missouri</item>
+        <item name="MT">Montana</item>
+        <item name="NE">Nebraska</item>
+        <item name="NV">Nevada</item>
+        <item name="NH">New Hampshire</item>
+        <item name="NJ">New Jersey</item>
+        <item name="NM">New Mexico</item>
+        <item name="NY">New York</item>
+        <item name="NC">North Carolina</item>
+        <item name="ND">North Dakota</item>
+        <item name="OH">Ohio</item>
+        <item name="OK">Oklahoma</item>
+        <item name="OR">Oregon</item>
+        <item name="PA">Pennsylvania</item>
+        <item name="RI">Rhode Island</item>
+        <item name="SC">South Carolina</item>
+        <item name="SD">South Dakota</item>
+        <item name="TN">Tennessee</item>
+        <item name="TX">Texas</item>
+        <item name="UT">Utah</item>
+        <item name="VT">Vermont</item>
+        <item name="VI">Virginia</item>
+        <item name="WA">Washington</item>
+        <item name="WV">West Virginia</item>
+        <item name="WI">Wisconsin</item>
+        <item name="WY">Wyoming</item>
+    </string-array>
+    <string-array name="statecodes">
+        <item>Select</item>
+        <item>AL</item>
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>DC</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_map_fragment">MapFragment</string>
+    <string name="title_activity_intro">IntroActivity</string>
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rakeshshenoy.forecastsearch.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Forecast Search"
+        android:id="@+id/heading1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Street"
+        android:id="@+id/streetLabel"
+        android:layout_below="@+id/heading1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="City"
+        android:id="@+id/cityLabel"
+        android:layout_below="@+id/streetLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="State"
+        android:id="@+id/stateLabel"
+        android:layout_below="@+id/cityLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Degree"
+        android:id="@+id/degreeLabel"
+        android:layout_below="@+id/stateLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        android:onClick="Search"
+        android:id="@+id/searchButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:onClick="clear"
+        android:id="@+id/clearButton"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/heading1"
+        android:layout_alignStart="@+id/heading1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/aboutButton"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onAboutClicked" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forecastIcon"
+        android:src="@drawable/forecast_logo"
+        android:layout_alignTop="@+id/aboutButton"
+        android:layout_toRightOf="@+id/clearButton"
+        android:layout_toEndOf="@+id/clearButton"
+        android:onClick="onLogoClicked" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Powered By:"
+        android:id="@+id/poweredBy"
+        android:layout_above="@+id/forecastIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff0000"
+        android:id="@+id/errorMsg"
+        android:layout_above="@+id/poweredBy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/street"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/searchButton"
+        android:layout_toEndOf="@+id/searchButton"
+        android:layout_marginTop="93dp"
+        android:layout_alignBottom="@+id/streetLabel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:layout_below="@+id/street"
+        android:layout_alignLeft="@+id/street"
+        android:layout_alignStart="@+id/street"
+        android:layout_alignRight="@+id/street"
+        android:layout_alignEnd="@+id/street" />
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        android:layout_below="@+id/city"
+        android:layout_alignLeft="@+id/city"
+        android:layout_alignStart="@+id/city"
+        android:layout_above="@+id/degree"
+        android:spinnerMode="dropdown" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/degreeLabel"
+        android:layout_toRightOf="@+id/searchButton"
+        android:layout_toEndOf="@+id/searchButton"
+        android:layout_above="@+id/searchButton"
+        android:id="@+id/degree"
+        android:checkedButton="@+id/fahrenheit"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit"
+            />
+        <RadioButton android:id="@+id/celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius"
+            android:layout_marginLeft="20dp"
+            />
+    </RadioGroup>
+</RelativeLayout>
